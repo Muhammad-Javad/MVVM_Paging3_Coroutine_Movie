@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Display">
+
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/display_items"
+            android:entryValues="@array/display_value"
+            android:icon="@drawable/ic_baseline_brightness_6_24"
+            android:key="theme"
+            android:title="Display Theme" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Content">
+
+        <ListPreference
+            android:defaultValue="popular"
+            android:entries="@array/category_items"
+            android:entryValues="@array/category_value"
+            android:icon="@drawable/ic_baseline_sort_24"
+            android:key="category"
+            android:title="Sort By" />
+        <ListPreference
+            android:defaultValue="en-US"
+            android:entries="@array/language_items"
+            android:entryValues="@array/language_value"
+            android:icon="@drawable/ic_baseline_language_24"
+            android:key="language"
+            android:title="Choice your language" />
+    </PreferenceCategory>
+</PreferenceScreen>
